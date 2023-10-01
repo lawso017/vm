@@ -5,7 +5,6 @@ metadata:
   name: omnilogic-exporter
   namespace: monitoring-system
 spec:
-  disabled: false
   selector:
     matchLabels:
       app.kubernetes.io/name: omnilogic-exporter
