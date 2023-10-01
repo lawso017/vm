@@ -17,11 +17,10 @@ spec:
     spec:
       containers:
       - args: 
-        - --omnilogic.username=$OMNILOGIC_USERNAME
-        - --omnilogic.password=$OMNILOGIC_PASSWORD
-        - --log.level=debug
+        - -c
+        - exec /bin/omnilogic_exporter --omnilogic.username=$OMNILOGIC_USERNAME --omnilogic.password=$OMNILOGIC_PASSWORD --log.level=debug
         command:
-        - /bin/omnilogic_exporter
+        - /bin/sh
         env:
         - name: OMNILOGIC_USERNAME
           valueFrom:
