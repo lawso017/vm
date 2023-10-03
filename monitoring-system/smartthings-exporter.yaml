@@ -16,17 +16,22 @@ spec:
         app.kubernetes.io/name: smartthings-exporter
     spec:
       containers:
+      - args: 
+        - -c
+        - exec /main -token $STE_API_TOKEN
+        command:
+        - /bin/sh
       - env:
         - name: STE_API_TOKEN
           valueFrom:
             secretKeyRef:
               key: api_token
               name: smartthings-exporter
-        image: setheck/smartthings-exporter
+        image: moikot/smartthings-metrics
         imagePullPolicy: IfNotPresent
         name: smartthings-exporter
         ports:
-        - containerPort: 9119
+        - containerPort: 9153
           name: smartthings
           protocol: TCP
         readinessProbe:
