@@ -4,3 +4,4 @@ resources:
   - omnilogic-exporter.yaml
   - omnilogic-pod-scrape.yaml
   - smartthings-exporter.yaml
+  - smartthings-pod-scrape.yaml
