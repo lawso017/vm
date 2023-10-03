@@ -21,7 +21,7 @@ spec:
         - exec /main -token $STE_API_TOKEN
         command:
         - /bin/sh
-      - env:
+        env:
         - name: STE_API_TOKEN
           valueFrom:
             secretKeyRef:
