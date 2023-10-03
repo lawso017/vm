@@ -17,10 +17,8 @@ spec:
     spec:
       containers:
       - args: 
-        - -c
-        - exec /main -token $STE_API_TOKEN
-        command:
-        - /bin/sh
+        - -token
+        - $(STE_API_TOKEN)
         env:
         - name: STE_API_TOKEN
           valueFrom:
