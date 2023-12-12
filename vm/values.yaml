@@ -678,6 +678,10 @@ grafana:
         url: https://raw.githubusercontent.com/rancher/charts/dev-v2.8/charts/rancher-monitoring/103.0.1%2Bup45.31.1/files/rancher/k8s/rancher-k8s-components-nodes.json
       rancher-k8s-components:
         url: https://raw.githubusercontent.com/rancher/charts/dev-v2.8/charts/rancher-monitoring/103.0.1%2Bup45.31.1/files/rancher/k8s/rancher-k8s-components.json
+      rancher-node-detail:
+        url: https://raw.githubusercontent.com/rancher/charts/dev-v2.8/charts/rancher-monitoring/103.0.1%2Bup45.31.1/files/rancher/nodes/rancher-node-detail.json
+      rancher-node:
+        url: https://raw.githubusercontent.com/rancher/charts/dev-v2.8/charts/rancher-monitoring/103.0.1%2Bup45.31.1/files/rancher/nodes/rancher-node.json
 
   defaultDashboardsTimezone: utc
 
