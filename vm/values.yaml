@@ -662,6 +662,7 @@ grafana:
           folder: ""
           type: file
           disableDeletion: false
+          allowUiUpdates: true
           editable: true
           options:
             path: /var/lib/grafana/dashboards/default
@@ -670,6 +671,7 @@ grafana:
           folder: "Rancher"
           type: file
           disableDeletion: false
+          allowUiUpdates: true          
           editable: true
           options:
             path: /var/lib/grafana/dashboards/rancher
@@ -695,6 +697,16 @@ grafana:
         url: https://raw.githubusercontent.com/rancher/charts/dev-v2.8/charts/rancher-monitoring/103.0.1%2Bup45.31.1/files/rancher/nodes/rancher-node-detail.json
       rancher-node:
         url: https://raw.githubusercontent.com/rancher/charts/dev-v2.8/charts/rancher-monitoring/103.0.1%2Bup45.31.1/files/rancher/nodes/rancher-node.json
+      rancher-performane-debugging:
+        url: https://raw.githubusercontent.com/rancher/charts/dev-v2.8/charts/rancher-monitoring/103.0.1%2Bup45.31.1/files/rancher/performance/performance-debugging.json
+      rancher-pod-containers:
+        url: https://raw.githubusercontent.com/rancher/charts/dev-v2.8/charts/rancher-monitoring/103.0.1%2Bup45.31.1/files/rancher/pods/rancher-pod-containers.json
+      rancher-pod:
+        url: https://raw.githubusercontent.com/rancher/charts/dev-v2.8/charts/rancher-monitoring/103.0.1%2Bup45.31.1/files/rancher/pods/rancher-pod.json
+      rancher-workload-pods:
+        url: https://raw.githubusercontent.com/rancher/charts/dev-v2.8/charts/rancher-monitoring/103.0.1%2Bup45.31.1/files/rancher/workloads/rancher-workload-pods.json
+      rancher-workload:
+        url: https://raw.githubusercontent.com/rancher/charts/dev-v2.8/charts/rancher-monitoring/103.0.1%2Bup45.31.1/files/rancher/workloads/rancher-workload.json
 
   defaultDashboardsTimezone: utc
 
