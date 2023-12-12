@@ -675,6 +675,8 @@ grafana:
         gnetId: 1860
         revision: 22
         datasource: VictoriaMetrics
+      rancher-default-home:
+        url: https://github.com/rancher/charts/tree/dev-v2.8/charts/rancher-monitoring/103.0.1%2Bup45.31.1/files/rancher/home/rancher-default-home.json
 
   defaultDashboardsTimezone: utc
 
