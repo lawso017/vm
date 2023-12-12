@@ -625,6 +625,9 @@ grafana:
     enabled: true
     type: pvc
     size: 10Gi
+    accessModes:
+      - ReadWriteMany
+
   ## all values for grafana helm chart can be specified here
   sidecar:
     datasources:
