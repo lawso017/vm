@@ -157,7 +157,7 @@ vmsingle:
     #       port:
     #         name: service
     tls:
-    - secretName: grafana-ingress-tls
+    - secretName: vm-ingress-tls
       hosts:
         - vm.lawsongroup.org
 
